@@ -1,9 +1,11 @@
+import CartIcon from "../CartIcon/CartIcon"
+
 export default function Navbar() {
 
     const headerStyles = {
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "space-between",
+        justifyContent: "center",
         listStyle: "none"
     } 
 
@@ -15,6 +17,7 @@ export default function Navbar() {
                 <li>Nosotros</li>
                 <li>Contacto</li>
             </ul>
+            <CartIcon count={2}/>
         </header>
     );
 }
