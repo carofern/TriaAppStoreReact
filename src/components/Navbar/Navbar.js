@@ -2,6 +2,13 @@ import CartIcon from "../CartIcon/CartIcon"
 
 export default function Navbar() {
 
+    const Button = ({texto}) => {
+        console.log(texto)
+        return (
+            <input type="button" value={texto} />
+        )
+    }
+
     const headerStyles = {
         display: "flex",
         flexWrap: "wrap",
@@ -18,6 +25,7 @@ export default function Navbar() {
                 <li>Contacto</li>
             </ul>
             <CartIcon count={2}/>
+            <Button texto="CLICK"/>
         </header>
     );
 }
