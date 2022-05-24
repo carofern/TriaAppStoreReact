@@ -1,8 +1,106 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+
+
+.App {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    height: 100vh;
+    text-align: center;
+}
+
+.App-header {
+    display: flex;
+    background-color: #ECECEC;
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+
+}
+
+
+nav {
+    width: 100%;
+}
+
+.bg-light {
+    background-color: #ECECEC !important;
+}
+
+.BoxProd {
+    padding-top: 2%;
+
+}
+
+.taskTitle {
+    display: flex;
+    margin: auto;
+    margin-bottom: 2%;
+    justify-content: center;
+    width: 80%;
+    color: #000;
+    font-size: 2rem;
+    background-color: #ECECEC;
+}
+
+
 h1 {
-    color: red;
+    color: black;
+    margin: auto;
+
+}
+
+.cartClass {
+    background-color: #ECECEC;
+    border: none;
+    width: 50px;
+    height: 100%;
+}
+
+.list-group-flush {
+    padding-top: 2%;
+    width: 80%;
+    margin: auto;
+}
+
+.Products {
+    display: flex;
+    width: 80%;
+    padding-top: 1%;
+    margin: auto;
+}
+
+
+
+.CardProd {
+    width: 25%;
+    margin: 1%;
+}
+
+.itemPanelAdd {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.itemAddCard {
+    margin: 5%;
+}
+
+.itemCountValue {
+    margin: 5%;
+}
+
+.prodImgStyle {
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 5%;
+}
+
+.spinner {
+    color: white;
 }
