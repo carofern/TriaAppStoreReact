@@ -1,30 +1,18 @@
-import CartIcon from "../CartIcon/CartIcon"
+import CartIcon from "../CartIcon/CartIcon";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
-export default function Header () {
-
-    const Button = ({texto}) => {
-        console.log(texto)
-        return (
-            <input type="button" value={texto} />
-        )
-    }
-
-    const headerStyles = {
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        listStyle: "none"
-    } 
-
-    return (
-        <header className="header">
-            <div className="logo">Market Shop</div>
-            <ul className="links" style={headerStyles}>
-                <li>Inicio</li>
-                <li>Nosotros</li>
-                <li>Contacto</li>
-            </ul>
-            <CartIcon />
-        </header>
-    );
+export default function NavBar() {
+  return (
+    <Navbar className="nav" bg="light" variant="light">
+      <Container>
+        <Navbar.Brand href="#home">TriaShop App</Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Inicio</Nav.Link>
+          <Nav.Link href="#features">Nosotros</Nav.Link>
+          <Nav.Link href="#pricing">Contacto</Nav.Link>
+        </Nav>
+      </Container>
+      <CartIcon />
+    </Navbar>
+  );
 }

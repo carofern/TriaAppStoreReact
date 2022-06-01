@@ -57,8 +57,7 @@ h1 {
 .cartClass {
     background-color: #ECECEC;
     border: none;
-    width: 50px;
-    height: 100%;
+
 }
 
 .list-group-flush {
@@ -81,6 +80,33 @@ h1 {
     margin: 1%;
 }
 
+.CardProdDetail{
+    width: 80%;
+    margin: auto;
+}
+
+.CardProdDetailBody{
+    display: flex;
+   flex-direction: row!important;
+    width: 80%;
+    margin: auto;
+
+}
+
+.card-footer{
+    background-color: #ECECEC!important;
+}
+
+.btnVolver{
+
+    background-color: #ECECEC!important;
+        color: #000000!important;
+
+}
+
+
+
+
 .itemPanelAdd {
     display: flex;
     width: 100%;
@@ -101,6 +127,22 @@ h1 {
     padding-bottom: 5%;
 }
 
-.spinner {
-    color: white;
+.prodDetailsImgStyle {
+    width: 30%!important;
+    border-radius: 5px;
+    padding-bottom: 5%;
 }
+
+
+.spinner {
+   
+    color: #000000!important;
+}
+
+
+.details{
+    margin: 5%;
+    background-color: #FFFFFF!important;
+    color: #000000!important;
+}
+
