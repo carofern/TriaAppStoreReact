@@ -1,22 +1,23 @@
-import Header from "./components/Header/Header";
+import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemDetails from "./components/ItemDetail/ItemDetail";
+import ItemDetailsContainer from "./components/DetailsComponent/ItemDetailsContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Footer from './components/Footer/Footer'
+import CartProvider from "./context/CartContext";
 
 function App() {
-
   return (
     <div className="App">
-      <Header />
-      <ItemListContainer />
-      <ItemDetails
-        title={"Robust Style"}
-        slogan={"For Champions. We think that is great for you."}
-        shipping={"Immediate delivery - Free shipping"}
-        size={"Size: Small - Medium - Hacemos envíos gratis a través de Mercado Envíos."}
-        price={"$244"}
-
-      />
-
+      <BrowserRouter>
+        <CartProvider>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/category/:id" element={<ItemListContainer />} />
+            <Route path="/product/:id" element={<ItemDetailsContainer />} />
+          </Routes>
+        </CartProvider>
+      </BrowserRouter>
     </div>
   );
 }
