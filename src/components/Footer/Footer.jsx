@@ -2,10 +2,13 @@ import { Card } from "react-bootstrap";
 
 export default function Footer() {
   return (
-    <>
+    <div className="footerContainer">
       <div border="secondary" className="Footer">
         <Card border="secondary" className="Footer">
-          <Card.Body className="cardFooter">linkedin</Card.Body>
+          <Card.Body className="cardFooter">
+          <a href="https://www.linkedin.com" alt="Linkedin"><img class="Linkedin" src="../img/Linkedin.png" width="10%" tag="link a Linkedin" alt="linkedin"></img></a>
+          <p>Te Espero!</p>
+          </Card.Body>
           <Card.Body className="cardFooter">
             <Card.Text>Proyecto React</Card.Text>
             <Card.Text>Buenos Aires,AR</Card.Text>
@@ -15,8 +18,8 @@ export default function Footer() {
         </Card>
       </div>
       <Card border="secondary" className="FooterCP">
-        <Card.Text>© 2022 Copyright: Martin Neme</Card.Text>
+        <Card.Text>© 2022 Copyright</Card.Text>
         </Card>
-    </>
+    </div>
   );
 }

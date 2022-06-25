@@ -11,8 +11,8 @@ export default function ItemDetails({ productDetail }) {
 
   const nav = useNavigate();
 
-  const { addToCart } = useContext(cartContext);
-
+  const { addToCart} = useContext(cartContext);
+  
   const [enableCount, setEnableCount] = useState(true);
   const [quantity, setQuantity] = useState(0);
 
@@ -21,6 +21,8 @@ export default function ItemDetails({ productDetail }) {
     setEnableCount(false);
     setQuantity(quantity);
   };
+
+  
 
   return (
     <>
@@ -48,10 +50,11 @@ export default function ItemDetails({ productDetail }) {
                 />
               ) : (
                 <>
-                <h6>Se agregó {quantity} productos al carrito </h6>
+                <h6>Se agregó {quantity} producto/s al carrito </h6>
                 <Button variant="primary btnVolver" onClick={() => nav(`/cart`)}>
                 Finalizar Compra
-              </Button></>
+              </Button>
+              </>
               )}
             </ListGroupItem>
           </ListGroup>
