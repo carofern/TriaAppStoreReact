@@ -18,15 +18,15 @@ export default function NavBar() {
             </NavLink>
 
             <NavLink to="/category/1" className="btnNav">
-              Classic
+              Carbon
             </NavLink>
 
             <NavLink to="/category/2" className="btnNav">
-              Smart
+              Premium
             </NavLink>
 
             <NavLink to="/category/3" className="btnNav">
-             For Home
+             Competition
             </NavLink>
           </Nav>
         </Container>

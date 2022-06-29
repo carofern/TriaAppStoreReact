@@ -32,13 +32,19 @@ nav {
 }
 
 .btnNav{
-    text-decoration: none;
+    /*text-decoration: none;
     color: #000000;
-    margin-right:1% ;
+    margin-right:1% ;*/
+    padding: 9px 45px;
+    background-color: rgb(194, 203, 183);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+    
 }
-
-
-
 
 
 .bg-info{
@@ -70,7 +76,8 @@ h1 {
 
 .BtnCart{
     align-self: center;
-    width: 40%;
+    width: 20%;
+    margin: 15px;
 }
 
 .cartClass {
@@ -92,7 +99,6 @@ h1 {
 }
 
 
-
 .list-group-flush {
     padding-top: 2%;
     width: 80%;
@@ -107,8 +113,6 @@ h1 {
     flex-wrap: wrap;
 
 }
-
-
 
 .CardProd {
     width: 23%;
@@ -126,8 +130,6 @@ h1 {
 }
 
 .CardProdDetailBody{
-    display: flex;
-   flex-direction: row!important;
     width: 100%;
     margin: auto;
 
@@ -144,9 +146,6 @@ h1 {
         color: #000000!important;
 
 }
-
-
-
 
 .itemPanelAdd {
     display: flex;
@@ -246,7 +245,7 @@ h1 {
 
 
 .btnNav:hover{
-    color: #5DADE2;
+    color: #5e5959;
 
 }
 
