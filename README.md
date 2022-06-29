@@ -6,7 +6,7 @@ Funcionalmente permitirá que el potencial cliente visualice la oferta de produc
 
 Los productos y las ordenes de compras generadas serán almacenadas en una sus respectivas colecciones de ordenes en Firestore.
 
-## Ver sitio productivo [aquí](https://vercel.com/carofern/tria-app-store-react)
+## Ver sitio productivo [aquí](https://tria-app-store-react.vercel.app/)
 [![ezgif-3-947cf19800.md.gif](https://s8.gifyu.com/images/ezgif-3-947cf19800.md.gif)](https://gifyu.com/image/SKMf5)
 
 
